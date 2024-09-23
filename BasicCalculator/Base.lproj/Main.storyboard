@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BasicCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf5-wC-U42">
+                                <rect key="frame" x="109.66666666666669" y="99" width="174" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Basic Calculator">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5S-N8-WmY">
+                                <rect key="frame" x="132" y="201" width="129" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDW-FM-5UX">
+                                <rect key="frame" x="147.66666666666666" y="257" width="98" height="23"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Operations">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbt-34-HLm">
+                                <rect key="frame" x="168" y="298" width="57" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7a-hz-Hos">
+                                <rect key="frame" x="150.66666666666666" y="349" width="92" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Subtract">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUf-od-d2p">
+                                <rect key="frame" x="153.66666666666666" y="400" width="86" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Multiply">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qi2-0c-d0D">
+                                <rect key="frame" x="159" y="451" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Divide">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptg-Mn-EvG">
+                                <rect key="frame" x="170.66666666666666" y="506" width="52" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Result">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsV-Aa-pRm">
+                                <rect key="frame" x="132" y="147" width="129" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="gDW-FM-5UX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="14i-g6-JvZ"/>
+                            <constraint firstItem="R5S-N8-WmY" firstAttribute="top" secondItem="gsV-Aa-pRm" secondAttribute="bottom" constant="20" id="3gz-od-IDh"/>
+                            <constraint firstItem="qi2-0c-d0D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3li-iM-349"/>
+                            <constraint firstItem="R5S-N8-WmY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="62j-No-tIS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R5S-N8-WmY" secondAttribute="trailing" constant="132" id="68p-fA-hqb"/>
+                            <constraint firstItem="qi2-0c-d0D" firstAttribute="top" secondItem="oUf-od-d2p" secondAttribute="bottom" constant="16" id="6LG-qu-YGI"/>
+                            <constraint firstItem="mf5-wC-U42" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="6eX-Ju-zY7"/>
+                            <constraint firstItem="gsV-Aa-pRm" firstAttribute="top" secondItem="mf5-wC-U42" secondAttribute="bottom" constant="20" id="8hp-ZE-kmU"/>
+                            <constraint firstItem="gsV-Aa-pRm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BpX-KQ-Du0"/>
+                            <constraint firstItem="gbt-34-HLm" firstAttribute="top" secondItem="gDW-FM-5UX" secondAttribute="bottom" constant="16" id="GZS-W2-xzU"/>
+                            <constraint firstItem="oUf-od-d2p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M4T-Oz-HEg"/>
+                            <constraint firstItem="gbt-34-HLm" firstAttribute="top" secondItem="gDW-FM-5UX" secondAttribute="bottom" constant="20" id="MCR-vX-khT"/>
+                            <constraint firstItem="oUf-od-d2p" firstAttribute="top" secondItem="A7a-hz-Hos" secondAttribute="bottom" constant="16" id="TKb-NL-gca"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gsV-Aa-pRm" secondAttribute="trailing" constant="132" id="WxN-Ho-AIc"/>
+                            <constraint firstItem="gsV-Aa-pRm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XTK-mQ-POa"/>
+                            <constraint firstItem="gbt-34-HLm" firstAttribute="top" secondItem="gDW-FM-5UX" secondAttribute="bottom" constant="18" id="Xxf-mA-1LR"/>
+                            <constraint firstItem="gDW-FM-5UX" firstAttribute="top" secondItem="R5S-N8-WmY" secondAttribute="bottom" constant="24" id="YSu-8k-mW0"/>
+                            <constraint firstItem="gbt-34-HLm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aI7-7A-Wdx"/>
+                            <constraint firstItem="gsV-Aa-pRm" firstAttribute="top" secondItem="mf5-wC-U42" secondAttribute="bottom" constant="20" id="beA-UU-gQX"/>
+                            <constraint firstItem="gDW-FM-5UX" firstAttribute="top" secondItem="R5S-N8-WmY" secondAttribute="bottom" constant="20" id="eYZ-Du-HXz"/>
+                            <constraint firstItem="gsV-Aa-pRm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="gmp-EV-Gq8"/>
+                            <constraint firstItem="R5S-N8-WmY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kh1-QT-Xhc"/>
+                            <constraint firstItem="mf5-wC-U42" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nM7-a6-NYN"/>
+                            <constraint firstItem="A7a-hz-Hos" firstAttribute="top" secondItem="gbt-34-HLm" secondAttribute="bottom" constant="16" id="nlw-YF-ifb"/>
+                            <constraint firstItem="ptg-Mn-EvG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tus-kQ-SaD"/>
+                            <constraint firstItem="R5S-N8-WmY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u1e-Id-QG3"/>
+                            <constraint firstItem="gDW-FM-5UX" firstAttribute="top" secondItem="R5S-N8-WmY" secondAttribute="bottom" constant="22" id="uNC-YH-U9d"/>
+                            <constraint firstItem="ptg-Mn-EvG" firstAttribute="top" secondItem="qi2-0c-d0D" secondAttribute="bottom" constant="20" id="uzi-vP-KQU"/>
+                            <constraint firstItem="A7a-hz-Hos" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w9T-AP-0ew"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="gbt-34-HLm" id="mYo-FC-T2v"/>
+                        <outlet property="divideButton" destination="qi2-0c-d0D" id="wjf-V7-4ad"/>
+                        <outlet property="multiplyButton" destination="oUf-od-d2p" id="ihx-GZ-k4Z"/>
+                        <outlet property="operationsLabel" destination="gDW-FM-5UX" id="vud-Nr-UpN"/>
+                        <outlet property="resultLabel" destination="ptg-Mn-EvG" id="Qni-TS-OVt"/>
+                        <outlet property="subtractButton" destination="A7a-hz-Hos" id="jUT-VG-a8K"/>
+                        <outlet property="textFieldFirstNum" destination="gsV-Aa-pRm" id="PsP-19-thD"/>
+                        <outlet property="textFieldSecondNum" destination="R5S-N8-WmY" id="9XQ-9U-EL5"/>
+                        <outlet property="topLabel" destination="mf5-wC-U42" id="Zz4-Xs-8jh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
